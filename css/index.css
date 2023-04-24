@@ -162,4 +162,22 @@
     width: 264px;
     height: 40px;
 }
-
+.card-skills{
+    margin-left: 32px;
+    margin-top: 32px;
+    text-align: center;
+}
+.skill-row {
+    width: 100%;
+    background-color: var(--grey-color);
+    margin-bottom: 1rem;
+}
+.skill {
+    text-align: right;
+    line-height: 24px;
+    text-align: center;
+}
+.skill-first {width: 69%; background-color: rgb(21, 177, 26);}
+.skill-second {width: 60%; background-color: #81bc21;}
+.skill-third {width: 50%; background-color: #d2be04;}
+.skill-fourth {width: 20%; background-color: #d28304;}
