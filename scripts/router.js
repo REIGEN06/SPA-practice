@@ -22,9 +22,6 @@ const handleLocation = async () => {
   const html = await fetch("/Web-bee-test-assignment" + route).then((data) =>
     data.text()
   );
-  console.log(path);
-  console.log(route);
-  console.log(html);
   document.getElementById("app").innerHTML = html;
 };
 // Отслеживает изменение юрла (listener)
