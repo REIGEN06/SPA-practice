@@ -19,7 +19,9 @@ const routes = {
 const handleLocation = async () => {
   const path = window.location.pathname.replace("/Web-bee-test-assignment", "");
   const route = routes[path] || routes[404];
-  const html = await fetch(route).then((data) => data.text());
+  const html = await fetch("/Web-bee-test-assignment" + route).then((data) =>
+    data.text()
+  );
   console.log(path);
   console.log(route);
   console.log(html);
