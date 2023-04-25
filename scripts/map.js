@@ -10,7 +10,7 @@ function init() {
     center,
     {
       balloonContentBody: "Живу в общаге...",
-      balloonContentFooter: "за то рядом с уником",
+      balloonContentFooter: "зато рядом с уником",
     },
     {
       iconLayout: "default#image",
