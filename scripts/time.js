@@ -4,7 +4,7 @@ localStorage.setItem("startTime", startTime);
 let checker = setInterval(function () {
   let timer = document.getElementById("time");
   if (timer) {
-    clearInterval(checker);
+    // clearInterval(checker);
     timer.innerHTML = getTime();
 
     function getTime() {
