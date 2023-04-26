@@ -4,7 +4,6 @@ localStorage.setItem("startTime", startTime);
 let checker = setInterval(function () {
   let timer = document.getElementById("time");
   if (timer) {
-    // clearInterval(checker);
     timer.innerHTML = getTime();
 
     function getTime() {
@@ -20,9 +19,5 @@ let checker = setInterval(function () {
         .map((value) => Math.round(value).toString().padStart(2, "0"))
         .join(":");
     }
-
-    setInterval(function () {
-      timer.innerHTML = getTime();
-    }, 1000);
   }
 }, 1000);
