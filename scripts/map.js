@@ -64,6 +64,4 @@ function getTileContainer(layer) {
   return null;
 }
 
-if (document.getElementById("map")) {
   ymaps.ready(init);
-}
