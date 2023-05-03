@@ -177,7 +177,19 @@
     line-height: 24px;
     text-align: center;
 }
-.skill-first {width: 69%; background-color: rgb(21, 177, 26);}
-.skill-second {width: 60%; background-color: #81bc21;}
-.skill-third {width: 50%; background-color: #d2be04;}
-.skill-fourth {width: 20%; background-color: #d28304;}
+.skill-first {
+    width: 170px; 
+    background-color: rgb(21, 177, 26);
+}
+.skill-second {
+    width: 150px;
+    background-color: #81bc21;
+}
+.skill-third {
+    width: 120px; 
+    background-color: #d2be04;
+}
+.skill-fourth {
+    width: 50px; 
+    background-color: #d28304;
+}
