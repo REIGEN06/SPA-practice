@@ -170,7 +170,7 @@
 .skill-row {
     width: 100%;
     background-color: var(--grey-color);
-    margin-bottom: 1rem;
+    margin-bottom: 15px;
 }
 .skill {
     text-align: right;
@@ -192,4 +192,23 @@
 .skill-fourth {
     width: 50px; 
     background-color: #d28304;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    fill:var(--black-color);
+}
+.icon:hover{
+    fill: var(--blue-color);
+}
+.icon-checkmark{
+    fill:green;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.activity-icon{
+    width: 24px;
+    height: 24px;
 }
