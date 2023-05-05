@@ -18,107 +18,87 @@
 </head>
 <body>
 <div class="main">
-    <header>
-        <div class="row justify-content-between">
-
-            <div class="col-sm-auto d-flex align-items-center">
-                <img src="icons/backarrow.svg" class="btn btn-light ms-3 mb-3 me-2">
+    <header class="wrapper ">
+        <div class="row justify-content-between mb-1">
+            <div class="col-sm-auto d-flex align-items-center ms-5">
+                <img src="icons/backarrow.svg" class="btn btn-light">
                 <p style="font-size: 18px;"><b>User Pages</b> - Profile</p>
             </div>
 
-            <div class="col-sm-auto d-flex align-items-center">
-
-                <div class="btn btn-light d-flex flex-column align-items-center m-3">
-                  <img src="icons/statistics.svg">
-                  Statistics
+            <div class="col-sm-auto d-flex align-items-center ms-5 me-5">
+                <div class="btn btn-light d-flex flex-column align-items-center ">
+                <img src="icons/statistics.svg">
+                <p>Statistics</p> 
                 </div>
-              
-                <div class="btn btn-light d-flex flex-column align-items-center m-3">
-                  <img src="icons/invoices.svg">
-                  Invoices
+            
+                <div class="btn btn-light d-flex flex-column align-items-center ">
+                <img src="icons/invoices.svg">
+                <p>Invoices</p> 
                 </div>
                 
-                <div class="btn btn-light d-flex flex-column align-items-center m-3">
+                <div class="btn btn-light d-flex flex-column align-items-center ">
                 <img src="icons/schedule.svg">
-                Schedule
+                <p>Schedule</p> 
                 </div>
-
-              </div>
-
+            </div>
         </div>
-        <div class="wrapper">
-            <!-- Навигационная панель -->
-            <nav class="navbar navbar-expand-sm w-100 " >
-                <!-- Левая часть навбара -->
-                <div class="container ms-5 ">
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-                        <a href="/">
-                            <div class="btn btn-light">
-                                <img src="icons/activity.svg" class="activity-icon20">
-                                Activity
-                            </div>
-                        </a>
-
-                        <a  href="/map">
-                            <div class="btn btn-light">
-                                <img src="icons/map.svg" class="activity-icon20">
-                                Map
-                            </div>
-                        </a>
-
-                        <a  href="/time">
-                            <div class="btn btn-light">
-                                <img src="icons/time.svg" class="activity-icon20">    
-                                Time
-                            </div>
-                        </a>
-
+        <nav class="row justify-content-between nav-shadow" >
+            <!-- Левая часть навбара -->
+            <div class="col d-flex align-items-center justify-content-start ms-5">
+                <a href="/" class="link">
+                    <div class="d-flex flex-row btn btn-light">
+                        <img src="icons/activity.svg" class="activity-icon20 me-2">
+                        <p>Activity</p> 
                     </div>
-                </div>
-                <!-- Правая часть навбара -->
-                <div class="container me-5">
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                          
-                        <a href="#">
-                            <div class="btn btn-light">
-                                <img src="icons/notes.svg" class="activity-icon20">
-                                Notes
-                            </div>
-                        </a>
-
-                        <a  href="#">
-                            <div class="btn btn-light">
-                                <img src="icons/friends.svg" class="activity-icon20">
-                                Friends
-                            </div>
-                        </a>
-
-                        <a  href="#">
-                            <div class="btn btn-light">
-                                <img src="icons/photos.svg" class="activity-icon20">    
-                                Photos
-                            </div>
-                        </a>
-
-                        <div class="nav-item dropdown">
-                            <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="icons/settings.svg" class="activity-icon20">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Edit profile</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Notifications</a></li>
-                            </ul>
-                        </div>
-
+                </a>
+                <a  href="/map" class="link">
+                    <div class="d-flex btn btn-light">
+                        <img src="icons/map.svg" class="activity-icon20 me-2">
+                        <p>Map</p> 
                     </div>
+                </a>
+                <a  href="/time" class="link">
+                    <div class="d-flex btn btn-light">
+                        <img src="icons/time.svg" class="activity-icon20 me-2">    
+                        <p>Time</p>
+                    </div>
+                </a>
+            </div>
+            <!-- Правая часть навбара -->
+            <div class="col d-flex align-items-center justify-content-end me-5">
+                <a  href="#" class="link">
+                    <div class="d-flex btn btn-light">
+                        <img src="icons/notes.svg" class="activity-icon20">
+                        <p>Notes</p> 
+                    </div>
+                </a>
+                <a  href="#" class="link">
+                    <div class="d-flex btn btn-light">
+                        <img src="icons/friends.svg" class="activity-icon20">
+                        <p>Friends</p> 
+                    </div>
+                </a>
+                <a  href="#" class="link">
+                    <div class="d-flex btn btn-light">
+                        <img src="icons/photos.svg" class="activity-icon20">    
+                        <p>Photos</p> 
+                    </div>
+                </a>
+                <div class="nav-item dropdown">
+                    <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="icons/settings.svg" class="activity-icon20">
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Edit profile</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Notifications</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <!-- Сюда загружаются страницы -->
-    <div id="app"></div>
+    <div id="app" class="row mt-4"></div>
 </div>
     <!-- Импорт Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
