@@ -1,211 +1,206 @@
-
-<div class="container activity">
-    <div class="activity">
-        <!-- Блок с резюме -->
-        <div class="activity-left-side">
-            <div class="activity-cv" >
-                <div class="card-header">
-                    <p class="title-post" style="font-size:18px">Cat and dog chasers</p> 
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg class="icon-checkmark" viewBox="0 0 16 16">
-                            <use xlink:href="svg/activity.svg#icon-checkmark" />
-                        </svg>
-                        49 minutes ago
-                        </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">
-                            Save to bookmarks
-                        </a></li>
-                        <li><a class="dropdown-item" href="#">
-                            Not interested
-                        </a></li>
-                        <li><a class="dropdown-item" href="#">
-                            Complain
-                        </a></li>
-                        <li><a class="dropdown-item" href="#">
-                            Notify about entries
-                        </a></li>
-                    </ul>
-                    
+<div class="row activity ">
+    <!-- Блок с резюме -->
+    <div class="col mb-5 me-3">
+        <div class="row activity-cv" >
+            <div class="row flex-row-reverse card-header mb-3">
+                <a class="col-sm-auto nav-link dropdown-toggle d-flex align-items-center justify-content-end mb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg class="icon-checkmark" viewBox="0 0 16 16">
+                        <use xlink:href="svg/activity.svg#icon-checkmark" />
+                    </svg>
+                    <p>49 minutes ago</p> 
+                </a>
+                <p class="col-sm-auto" style="font-size:18px">Cat and dog chasers</p> 
+                <ul class="dropdown-menu w-25">
+                    <li><a class="dropdown-item" href="#">
+                        Save to bookmarks
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        Not interested
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        Complain
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                        Notify about entries
+                    </a></li>
+                </ul>
+            </div>
+            <img src="https://i.pinimg.com/originals/64/f6/f8/64f6f8810ef9fe029b03b6c32428f357.gif" class="mw-100">
+            <!-- Комментарий -->
+            <div class="comment">
+                <a class="author" style="text-decoration: none;" href="#">
+                    <img src="icons/comments.svg"  width="16px" height="15px" class="checkmark-icon mt-1">
+                    <p1 class="user-comment"> Jason Anderson</p1>
+                    <p> commented:</p> 
+                </a>
+                <div class="comment-text mt-3">
+                    <p>Don’t sit and wait. Get out there, feel life. Touch the sun, ПОТРОГАЙ ТРАВУ and immerse in the sea. Keep love in your heart. A life without it is like a sunless garden when the flowers are dead. Because summer is passion, memories, light breeze, the sun that appears on the skin and caresses the face.</p>
+                    <p class="mg5_gray">— Jason, <i>10:30 am</i> </p>
                 </div>
-                <img src="https://i.pinimg.com/originals/64/f6/f8/64f6f8810ef9fe029b03b6c32428f357.gif" width="1016" height="424" class="card-img-top" alt="gif-cv">
-                <!-- Комментарий -->
-                <div class="comment">
-                    <a class="author" style="text-decoration: none;" href="#">
-                        <img src="icons/comments.svg"  width="16px" height="15px" class="checkmark-icon mt-1">
-                        <p1 class="user-comment"> Jason Anderson</p1>
-                        <p> commented:</p> 
-                    </a>
-                    <div class="comment-text">
-                        <p>Don’t sit and wait. Get out there, feel life. Touch the sun, and immerse in the sea. Keep love in your heart. A life without it is like a sunless garden when the flowers are dead. Because summer is passion, memories, light breeze, the sun that appears on the skin and caresses the face.</p>
-                        <p class="mg5_gray">— Jason, <i>10:30 am</i> </p>
-                    </div>
-                    <div class="comment-footer">
-                        <div class="viewers">
-                            <div class="view">
-                                <img src="icons/eye.svg" width="24px" height="24px" class="me-2">
-                                <p>432</p> 
-                            </div>
-                            <a class="comm" style="text-decoration: none;" href="#">
-                                <img src="icons/comments.svg" width="25px" height="15px" class="mt-1 me-2 ">
-                                <p>47</p> 
-                            </a>
+                <div class="comment-footer">
+                    <div class="d-flex col viewers">
+                        <div class="align-items-center view">
+                            <img src="icons/eye.svg" width="24px" height="24px" class="me-2">
+                            <p>432</p> 
                         </div>
-                        <a class="readpost" style="text-decoration: none;" href="#">
-                            <p>Read post</p>
-                            <svg class="icon" viewBox="0 0 16 16">
-                                <use xlink:href="svg/activity.svg#icon-arrowright" />
-                            </svg>
+                        <a class="align-items-center comm" style="text-decoration: none;" href="#">
+                            <img src="icons/comments.svg" width="25px" height="15px" class="mt-1 me-2 ">
+                            <p>47</p> 
                         </a>
                     </div>
+                    <a class="d-flex col justify-content-end align-items-center readpost ms-5" style="text-decoration: none;" href="#">
+                        <p>Read post</p>
+                        <svg class="icon" viewBox="0 0 16 16">
+                            <use xlink:href="svg/activity.svg#icon-arrowright" />
+                        </svg>
+                    </a>
                 </div>
-            </div>
-            <!-- Отдельные посты -->
-            <div class="dropdown-under-cv">
-                <p class="title-post" style="font-size:18px">How to become an intern</p> 
-                <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icons/time.svg" class="icon">    
-                    53 minutes ago
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                        Save to bookmarks
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Not interested
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Complain
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Notify about entries
-                    </a></li>
-                </ul>
-            </div>
-
-            <div class="dropdown-under-cv">
-                <p class="title-post" style="font-size:18px">ChatGPT neural network told how to lose weight without giving up junk food</p> 
-                <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="icons/time.svg" class="icon">    
-                    56 minutes ago
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                        Save to bookmarks
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Not interested
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Complain
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        Notify about entries
-                    </a></li>
-                </ul>
+                
             </div>
         </div>
-        <!-- Блок с профилем -->
-        <div class="activity-right-side">
-            <div class="activity-profile p-3 align-items-center">
-                    <img  src="https://sun9-32.userapi.com/impg/zD6eStgsUsr1rM0Nn58GkuxPyZ_K_mifNr-5sA/w_0Sw1jH2ss.jpg?size=1199x1600&quality=95&sign=b98fa392cad4c57cbb7aad4044a8948f&type=album" class="portrait" alt="...">
-                    <p class="mg5" style="font-size: 18px;">Daniil Yakubov</p>
-                    <p class="mg5_gray">Web developer</p>
-                    <div class="d-flex mb-3 gap-2">
-                        <a class="nav-link" href="https://t.me/Kitsugrechka">
-                            <svg class="icon" viewBox="0 0 16 16">
-                                <use xlink:href="svg/activity.svg#icon-telegram" />
-                            </svg>
-                        </a>
-                        <a class="nav-link" href="https://github.com/REIGEN06">
-                            <svg class="icon" viewBox="0 0 16 16">
-                                <use xlink:href="svg/activity.svg#icon-github" />
-                            </svg>
-                        </a>
-                        <a class="nav-link" href="https://twitter.com/elonmusk">
-                            <svg class="icon" viewBox="0 0 16 16">
-                                <use xlink:href="svg/activity.svg#icon-twitter" />
-                            </svg>
-                        </a>
-                    </div>
+        <!-- Отдельные посты -->
+        <div class="row flex-row-reverse dropdown-under-cv">
+            <a class="col-sm-auto nav-link dropdown-toggle d-flex align-items-center justify-content-end mb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="icons/time.svg" class="icon me-2">    
+                53 minutes ago
+            </a>
+            <p class="col-sm-auto" style="font-size:18px">How to become an intern</p> 
+            <ul class="dropdown-menu w-25">
+                <li><a class="dropdown-item" href="#">
+                    Save to bookmarks
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Not interested
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Complain
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Notify about entries
+                </a></li>
+            </ul>
+        </div>
+
+        <div class="row flex-row-reverse dropdown-under-cv">
+            <a class="col-sm-auto nav-link dropdown-toggle d-flex align-items-center justify-content-end mb-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="icons/time.svg" class="icon me-2">    
+                56 minutes ago
+            </a>
+            <p class="col-sm-auto" style="font-size:18px">ChatGPT neural network told how to lose weight without giving up junk food</p> 
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">
+                    Save to bookmarks
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Not interested
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Complain
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    Notify about entries
+                </a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Блок с профилем -->
+    <div class="col-12 col-md-4 col-lg-3 col-xl-1 " >
+        <div class="d-flex activity-profile align-items-center" style="min-width: 293px;">
+            <img  src="https://sun9-32.userapi.com/impg/zD6eStgsUsr1rM0Nn58GkuxPyZ_K_mifNr-5sA/w_0Sw1jH2ss.jpg?size=1199x1600&quality=95&sign=b98fa392cad4c57cbb7aad4044a8948f&type=album" class="portrait">
+            <p style="font-size: 18px;">Daniil Yakubov</p>
+            <p>Web developer</p>
+            <div class="d-flex mb-3 gap-2">
+                <a class="nav-link" href="https://t.me/Kitsugrechka">
+                    <svg class="icon" viewBox="0 0 16 16">
+                        <use xlink:href="svg/activity.svg#icon-telegram" />
+                    </svg>
+                </a>
+                <a class="nav-link" href="https://github.com/REIGEN06">
+                    <svg class="icon" viewBox="0 0 16 16">
+                        <use xlink:href="svg/activity.svg#icon-github" />
+                    </svg>
+                </a>
+                <a class="nav-link" href="https://twitter.com/elonmusk">
+                    <svg class="icon" viewBox="0 0 16 16">
+                        <use xlink:href="svg/activity.svg#icon-twitter" />
+                    </svg>
+                </a>
             </div>
-            <!-- Скиллы, максимально простенько -->
-            <div style="width: 293px;">
-                <div class="card card-skills rounded-0">
-                    <div class="card-body ">
-                        <h6 class="card-title"><p>Skills</p></h6>
-                        
-                        <h6 class="card-subtitle mb-2"><p>JavaScript, HTML, CSS</p></h6>
-                        <div class="skill-row">
-                            <div class="skill skill-first">69%</div>
-                        </div>
+        </div>
+        <!-- Скиллы, максимально простенько -->
+        <div class="d-flex card card-skills rounded-0 w-100" style="min-width: 293px;">
+            <div class="card-body ">
+                <h6 class="card-title"><p>Skills</p></h6>
+                
+                <h6 class="card-subtitle mb-2"><p>JavaScript, HTML, CSS</p></h6>
+                <div class="skill-row">
+                    <div class="skill skill-first">70%</div>
+                </div>
 
-                        <h6 class="card-subtitle mb-2"><p>Go, C++, C#</p></h6>
-                        <div class="skill-row">
-                            <div class="skill skill-second">60%</div>
-                        </div>
-                        
-                        <h6 class="card-subtitle mb-2"><p>Git, Python, PHP, PostgreSQL</p></h6>
-                        <div class="skill-row">
-                            <div class="skill skill-third">50%</div>
-                        </div>
+                <h6 class="card-subtitle mb-2"><p>Go, C++, C#</p></h6>
+                <div class="skill-row">
+                    <div class="skill skill-second">60%</div>
+                </div>
+                
+                <h6 class="card-subtitle mb-2"><p>Git, Python, PHP, PostgreSQL</p></h6>
+                <div class="skill-row ">
+                    <div class="skill skill-third ">50%</div>
+                </div>
 
-                        <h6 class="card-subtitle mb-2 "><p>React, Vue, Node</p></h6>
-                        <div class="skill-row">
-                            <div class="skill skill-fourth">20%</div>
-                        </div>
-                    </div>
+                <h6 class="card-subtitle mb-2 "><p>React, Vue, Node</p></h6>
+                <div class="skill-row ">
+                    <div class="skill skill-fourth">20%</div>
                 </div>
             </div>
-            <!-- Выпадающее меню с навигацией -->
-            <div class="dropdown-under-profile">
-                <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Navigation
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/person.svg" class="activity-icon me-2" alt="...">
-                        My profile
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/balance.svg" class="activity-icon me-2">
-                        Balance
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/scheme.svg" class="activity-icon me-2">
-                        Connections
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/friends.svg" class="activity-icon me-2">
-                        Friends
-                    </a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/calendar.svg" class="activity-icon me-2">
-                        Events
-                    </a></li>
-                    <li><a class="dropdown-item" href="#">
-                        <img src="icons/settings.svg" class="activity-icon me-2">
-                        Account settings
-                    </a></li>
-                </ul>
-            </div>
-            <!-- Выпадающее меню с фидбэком -->
-            <div class="dropdown-under-profile">
-                <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Share your thoughts
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">
-                        <input type="text" style="line-height: 5.5;" class="form-control" placeholder="Enter your message...">
-                    </a></li>
-                    <div class="d-grid gap-2">
-                        <div class="container text-center">
-                        <button type="submit" class="btn btn-primary mt-2" style="width: 97%;">Save</button>
-                    </div>
+        </div>
+        <!-- Выпадающее меню с навигацией -->
+        <div class="d-flex dropdown-under-profile align-items-center">
+            <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Navigation
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/person.svg" class="activity-icon me-2" alt="...">
+                    My profile
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/balance.svg" class="activity-icon me-2">
+                    Balance
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/scheme.svg" class="activity-icon me-2">
+                    Connections
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/friends.svg" class="activity-icon me-2">
+                    Friends
+                </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/calendar.svg" class="activity-icon me-2">
+                    Events
+                </a></li>
+                <li><a class="dropdown-item" href="#">
+                    <img src="icons/settings.svg" class="activity-icon me-2">
+                    Account settings
+                </a></li>
+            </ul>
+        </div>
+        <!-- Выпадающее меню с фидбэком -->
+        <div class="d-flex dropdown-under-profile align-items-center">
+            <a class="nav-link dropdown-toggle p-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Share your thoughts
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">
+                    <input type="text" style="line-height: 5.5;" class="form-control" placeholder="Enter your message...">
+                </a></li>
+                <div class="d-grid gap-2">
+                    <div class="container text-center">
+                    <button type="submit" class="btn btn-primary mt-2" style="width: 97%;">Save</button>
                 </div>
-                </ul>
             </div>
+            </ul>
         </div>
     </div>
 </div>
