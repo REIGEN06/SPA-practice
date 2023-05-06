@@ -7,6 +7,6 @@ links.forEach((link) => {
 
 const removeActivities = () => {
   document.querySelectorAll(".nav-button").forEach((btn) => {
-    document.querySelector(".active")?.classList.remove("active");
+    document.querySelector(".active-button")?.classList.remove("active-button");
   });
 };

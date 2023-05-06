@@ -21,14 +21,14 @@ const handleLocation = async () => {
 
   switch (path) {
     case "/":
-      document.querySelector(".mainpage").classList.add("active");
+      document.querySelector(".mainpage").classList.add("active-button");
       break;
     case "/map":
       ymaps.ready(init);
-      document.querySelector(".mappage").classList.add("active");
+      document.querySelector(".mappage").classList.add("active-button");
       break;
     case "/time":
-      document.querySelector(".timepage").classList.add("active");
+      document.querySelector(".timepage").classList.add("active-button");
       break;
   }
 };
@@ -37,4 +37,6 @@ const handleLocation = async () => {
 window.onpopstate = handleLocation;
 
 // Для начальной обработки
-window.onload = handleLocation();
+document.addEventListener("DOMContentLoaded", () => {
+  handleLocation();
+});

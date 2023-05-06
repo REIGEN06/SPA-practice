@@ -120,7 +120,7 @@
     width: 132px;
     height: 132px;
     object-fit: cover;
-    object-position: 0 0;
+    object-position: 1 0;
     margin-top: 20px;
     margin-bottom:20px;
 }
@@ -186,6 +186,6 @@
     height: 20px;
 }
 
-.active{
+.active-button{
     background-color: var(--grey-color);
 }
