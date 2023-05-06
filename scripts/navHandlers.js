@@ -15,14 +15,14 @@ const updateActiveButtons = (path) => {
   removeActivities();
   switch (path) {
     case "/":
-      document.querySelector(".mainpage").classList.add("active-button");
+      document.querySelector('a[href*="/"]').classList.add("active-button");
       break;
     case "/map":
       ymaps.ready(init);
-      document.querySelector(".mappage").classList.add("active-button");
+      document.querySelector('a[href*="/map"]').classList.add("active-button");
       break;
     case "/time":
-      document.querySelector(".timepage").classList.add("active-button");
+      document.querySelector('a[href*="/time"]').classList.add("active-button");
       break;
   }
 };
