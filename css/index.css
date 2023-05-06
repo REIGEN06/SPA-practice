@@ -73,12 +73,12 @@
     display: flex;
     flex-direction: row;
 }
-.comm{
+.page-comment{
     margin-left: 16px;
     display: flex;
     flex-direction: row;
 }
-.comm :hover{
+.page-comment :hover{
     color:var(--blue-color)
 }
 .comment-footer{
