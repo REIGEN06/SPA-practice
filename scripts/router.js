@@ -17,20 +17,8 @@ const handleLocation = async () => {
   const path = window.location.pathname;
   const html = await fetch(routes[path]).then((data) => data.text());
   document.getElementById("app").innerHTML = html;
-  removeActivities();
 
-  switch (path) {
-    case "/":
-      document.querySelector(".mainpage").classList.add("active-button");
-      break;
-    case "/map":
-      ymaps.ready(init);
-      document.querySelector(".mappage").classList.add("active-button");
-      break;
-    case "/time":
-      document.querySelector(".timepage").classList.add("active-button");
-      break;
-  }
+  updateActiveButtons(path);
 };
 
 // Отслеживает back, go
