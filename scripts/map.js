@@ -24,7 +24,6 @@ function init() {
   var layer = map.layers.get(0).get(0);
   //Отслеживание события окончания отрисовки тайлов
   waitForTilesLoad(layer).then(function () {
-    console.log("im in");
     document.querySelector(".preloader").classList.add("preloader-remove");
     document.querySelector(".map").classList.add("map-show");
   });
@@ -63,5 +62,3 @@ function getTileContainer(layer) {
   }
   return null;
 }
-
-  ymaps.ready(init);

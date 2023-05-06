@@ -1,11 +1,8 @@
 "use strict";
 
-// Отслеживает юрл
 const route = (event) => {
   event = event || window.event;
-  //отмена действия браузера по умолчанию
   event.preventDefault();
-  // добавляет запись в стек истории сеансов
   window.history.pushState({}, "", event.target.href);
   handleLocation();
 };
@@ -17,16 +14,27 @@ const routes = {
 };
 
 const handleLocation = async () => {
-  const path = window.location.pathname.replace("/Web-bee-test-assignment", "");
-  const route = routes[path] || routes[404];
-  const html = await fetch("/Web-bee-test-assignment" + route).then((data) =>
-    data.text()
-  );
+  const path = window.location.pathname;
+  const html = await fetch(routes[path]).then((data) => data.text());
   document.getElementById("app").innerHTML = html;
+  removeActivities();
+
+  switch (path) {
+    case "/":
+      document.querySelector(".mainpage").classList.add("active");
+      break;
+    case "/map":
+      ymaps.ready(init);
+      document.querySelector(".mappage").classList.add("active");
+      break;
+    case "/time":
+      document.querySelector(".timepage").classList.add("active");
+      break;
+  }
 };
-// Отслеживает изменение юрла (listener)
+
+// Отслеживает back, go
 window.onpopstate = handleLocation;
-window.route = route;
 
 // Для начальной обработки
-handleLocation();
+window.onload = handleLocation();
