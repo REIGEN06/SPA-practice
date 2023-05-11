@@ -8,9 +8,9 @@ const route = (event) => {
 };
 
 const routes = {
-  "": "/pages/activity.html",
-  "#map": "/pages/map.html",
-  "#time": "/pages/time.html",
+  "": "/Web-bee-test-assignment/pages/activity.html",
+  "#map": "/Web-bee-test-assignment/pages/map.html",
+  "#time": "/Web-bee-test-assignment/pages/time.html",
 };
 
 const handleLocation = async () => {
