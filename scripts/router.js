@@ -15,7 +15,9 @@ const routes = {
 
 const handleLocation = async () => {
   const path = window.location.pathname;
+  console.log(`path: ${path}`);
   const html = await fetch(routes[path]).then((data) => data.text());
+  console.log(`html: ${path}`);
   document.getElementById("app").innerHTML = html;
 
   updateActiveButtons(path);
