@@ -1,12 +1,12 @@
 const center = [56.7416814609449, 37.225960833125036];
 
 function init() {
-  let map = new ymaps.Map("map", {
+  new ymaps.Map("map", {
     center: center,
     zoom: 16,
   });
 
-  let placemark = new ymaps.Placemark(
+  new ymaps.Placemark(
     center,
     {
       balloonContentBody: "Живу в общаге...",
