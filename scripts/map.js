@@ -21,7 +21,7 @@ function init() {
   );
   map.geoObjects.add(placemark);
   //Получение первого экземпляра коллекции слоев, и первого слоя коллекции
-  var layer = map.layers.get(0).get(0);
+  let layer = map.layers.get(0).get(0);
   //Отслеживание события окончания отрисовки тайлов
   waitForTilesLoad(layer).then(function () {
     document.querySelector(".preloader").classList.add("preloader-remove");
@@ -32,7 +32,7 @@ function init() {
 //Подождать все тайлы
 function waitForTilesLoad(layer) {
   return new ymaps.vow.Promise(function (resolve, reject) {
-    var tc = getTileContainer(layer),
+    let tc = getTileContainer(layer),
       readyAll = true;
     tc.tiles.each(function (tile, number) {
       if (!tile.isReady()) {
@@ -50,7 +50,7 @@ function waitForTilesLoad(layer) {
 }
 
 function getTileContainer(layer) {
-  for (var k in layer) {
+  for (let k in layer) {
     if (layer.hasOwnProperty(k)) {
       if (
         layer[k] instanceof ymaps.layer.tileContainer.CanvasContainer ||
