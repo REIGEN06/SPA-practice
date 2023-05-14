@@ -9,6 +9,7 @@ buttons.forEach((button) => {
 const updateActiveButtons = (path) => {
   removeActivities();
   switch (path) {
+    case "/":
     case "/home":
       document.querySelector('a[href*="home"]').classList.add("active-button");
       break;
