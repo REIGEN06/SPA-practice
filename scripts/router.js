@@ -7,10 +7,16 @@ const routes = {
   "/time": "./pages/time.html",
 };
 
+const route = (event) => {
+  event = event || window.event;
+  event.preventDefault();
+  window.history.pushState({}, "", event.target.href);
+  handleLocation();
+};
+
 const handleLocation = async () => {
   const parsePath = window.location.pathname.split("/");
   const path = "/" + parsePath[parsePath.length - 1];
-  console.log(`path: ${path}`);
   const html = await fetch(routes[path]).then((data) => data.text());
   document.getElementById("app").innerHTML = html;
 
@@ -21,6 +27,4 @@ const handleLocation = async () => {
 window.addEventListener("popstate", handleLocation);
 
 // Для начальной обработки
-document.addEventListener("DOMContentLoaded", () => {
-  handleLocation();
-});
+document.addEventListener("DOMContentLoaded", handleLocation);
