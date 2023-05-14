@@ -1,12 +1,5 @@
 "use strict";
 
-const route = (event) => {
-  event = event || window.event;
-  event.preventDefault();
-  window.history.pushState({}, "", event.target.href);
-  handleLocation();
-};
-
 const routes = {
   "/": "./pages/activity.html",
   "/home": "./pages/activity.html",

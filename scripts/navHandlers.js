@@ -1,16 +1,3 @@
-const links = document.querySelectorAll(".navbar-link");
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    route();
-  });
-});
-
-const removeActivities = () => {
-  document.querySelectorAll(".nav-button").forEach((btn) => {
-    document.querySelector(".active-button")?.classList.remove("active-button");
-  });
-};
-
 const updateActiveButtons = (path) => {
   removeActivities();
   switch (path) {
@@ -26,4 +13,10 @@ const updateActiveButtons = (path) => {
       document.querySelector('a[href*="time"]').classList.add("active-button");
       break;
   }
+};
+
+const removeActivities = () => {
+  document.querySelectorAll(".nav-button").forEach((btn) => {
+    document.querySelector(".active-button")?.classList.remove("active-button");
+  });
 };
