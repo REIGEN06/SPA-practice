@@ -22,6 +22,7 @@ const updateActiveButtons = (path) => {
       document.querySelector('a[href*="map"]').classList.add("active-button");
       break;
     case "/time":
+      calculateTime();
       document.querySelector('a[href*="time"]').classList.add("active-button");
       break;
   }
