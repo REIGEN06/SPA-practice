@@ -15,7 +15,8 @@ const routes = {
 };
 
 const handleLocation = async () => {
-  const path = window.location.pathname;
+  const parsePath = window.location.pathname.split("/");
+  const path = "/" + parsePath[parsePath.length - 1];
   console.log(`path: ${path}`);
   const html = await fetch(routes[path]).then((data) => data.text());
   document.getElementById("app").innerHTML = html;
