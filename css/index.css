@@ -8,17 +8,13 @@
 }
 
 /* Шрифты */
-.main p{
+.roboto{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--black-color);
     margin-bottom: 0;
 }
-.main a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: var(--black-color);
-}
+
 .link{
     text-decoration: none;
 }
@@ -48,7 +44,6 @@
 }
 .card-header{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .user-comment{
@@ -60,7 +55,6 @@
 }
 .author{
     display: flex;
-    flex-direction: row;
     margin-top: 16px;
     gap:5px;
 }
@@ -70,19 +64,16 @@
 .view{
     margin-right: 16px;
     display: flex;
-    flex-direction: row;
 }
 .page-comment{
     margin-left: 16px;
     display: flex;
-    flex-direction: row;
 }
 .page-comment :hover{
     color:var(--blue-color)
 }
 .comment-footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 .readpost{
@@ -95,9 +86,7 @@
     margin-top: 1px;
 }
 .dropdown-under-cv{
-    border: solid;
-    border-width:thin;
-    border-color: var(--grey-color);
+    border: thin solid var(--grey-color);
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
@@ -105,9 +94,7 @@
 }
 /* Блок с профилем */
 .activity-profile{
-    border: solid;
-    border-width:thin;
-    border-color: var(--grey-color);
+    border: thin solid var(--grey-color);
     flex-direction: column;
     justify-content: center;
     margin-right: 0px;
@@ -118,13 +105,10 @@
     height: 132px;
     object-fit: cover;
     object-position: 1 0;
-    margin-top: 20px;
-    margin-bottom:20px;
+    margin: 20px 0px 20px 0px;
 }
 .dropdown-under-profile{
-    border: solid;
-    border-width:thin;
-    border-color: var(--grey-color);
+    border: thin solid var(--grey-color);
     display: flex;
     margin-top: 32px;
     min-width: 293px;
