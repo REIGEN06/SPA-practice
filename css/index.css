@@ -30,13 +30,6 @@
     box-shadow: 0px 2px  var(--grey-color),0px -1px var(--grey-color);
 }
 
-/* Страница с активностью */
-.activity{
-    display: flex;
-    width: 1440px;
-    height: 1027px;
-}
-
 /* Блок с резюме */
 .activity-cv{
     border: thin solid var(--grey-color);
