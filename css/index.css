@@ -104,7 +104,6 @@
     border: thin solid var(--grey-color);
     display: flex;
     margin-top: 32px;
-    min-width: 293px;
     min-height: 40px;
 }
 .card-skills{
