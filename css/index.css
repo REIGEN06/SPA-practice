@@ -6,21 +6,23 @@
     --background-color:#F1F1F1;
     --white-color:#F1F1F1;
 }
-
-/* Шрифты */
+.main-frame{
+    min-width: 330px;
+}
+/* Текст */
 .roboto{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--black-color);
     margin-bottom: 0;
 }
-
 .link{
     text-decoration: none;
 }
 .link:hover{
     background-color: var(--grey-color);
 }
+
 /* Навигационная панель */
 .wrapper{
     min-width: 375px;
