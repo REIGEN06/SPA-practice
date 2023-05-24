@@ -1,5 +1,5 @@
 //Только для роутинга, не для изменения активной ссылки
-const buttons = document.querySelectorAll(".navbar-link");
+const buttons = document.querySelectorAll(".navbar-button");
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     route();
