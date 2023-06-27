@@ -1,5 +1,4 @@
 Test task for a trainee for a frontend internship (JavaScript)
-SPA on vanilla js
 Consists of 3 pages:
 1. Implement the "Summary" page. The resume can be in free form, but must contain a photo, contacts and skills.
 2. Implement the "Map" page. There should be an interactive map, with a marker in the place of residence. While the map is loading, display an animated preloader.
